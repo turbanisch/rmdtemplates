@@ -7,10 +7,14 @@ output:
 ---
   
 ```{r setup, include = FALSE}
-knitr::opts_chunk$set(echo = FALSE, message = FALSE)
+knitr::opts_chunk$set(echo = FALSE, 
+                      collapse = TRUE, 
+                      message = FALSE,
+                      comment = "#>",
+                      out.width = "100%")
 ```
 
-## Heading
+## Description
 
 This GitHub document template omits author and date because Git excels at tracking both anyways. It uses vector graphics that render nicely in the browser.
 
