@@ -1,5 +1,5 @@
 ---
-title: GitHub Document
+title: FT GitHub Document
 output: 
   github_document:
     toc: false
