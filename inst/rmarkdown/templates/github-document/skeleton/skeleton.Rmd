@@ -1,0 +1,35 @@
+---
+title: GitHub Document
+output: 
+  github_document:
+    toc: false
+    dev: svglite
+---
+  
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE)
+```
+
+## Heading
+
+This GitHub document template omits author and date because Git excels at tracking both anyways. It uses vector graphics that render nicely in the browser.
+
+### Embedding raw markdown output
+
+Make sure that any code output that you'd like to incorporate into the document verbatim comes in the right format. `github_document` is a GitHub-flavored markdown file, so it can only embed raw markdown (as opposed to html and LaTeX output). To embed raw markdown, use the `results='asis'` option -- however, some functions work even without:
+
+```{r, echo = TRUE}
+knitr::kable(head(mtcars, 5))
+```
+
+### Vector graphics
+
+Plotting with a graphics device that supports vector output allows for crisp graphical output. Use `dev = "svg"` instead of the preset to convert text into paths if you want to make sure that the viewer renders the figure in the same way as you do. If you need pixel graphics, try increasing the resolution with `dpi = 300`. Provide a chunk title to name the plot when it is saved. 
+
+```{r pressure plot}
+plot(pressure)
+```
+
+### Documentation
+
+The full documentation for `github_document` can be found [here](https://rmarkdown.rstudio.com/github_document_format.html).

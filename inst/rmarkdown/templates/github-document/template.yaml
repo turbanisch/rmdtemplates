@@ -1,0 +1,4 @@
+name: GitHub Document
+description: >
+   This template omits author and date because Git excels at tracking both anyways. It uses vector graphics that render nicely in the browser.
+create_dir: FALSE
